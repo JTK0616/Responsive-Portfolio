@@ -123,7 +123,7 @@ textarea {
 }
 
 .portfolioimage img {
-  width: 100%;
+  max-width: 100%;
   border: 0 none;
   opacity: .8;
 }
@@ -205,6 +205,10 @@ footer {
 		line-height: 85px;
 	}
 
+	.portfoliocontent {
+		width: 100%;
+	}
+
 }
 
 /* 
@@ -255,16 +259,9 @@ footer {
 		line-height: 85px;
 	}
 
-	.leftimage {
-		clear: both;
-		width:100%;
-		margin: 0 auto;
-	}
 
-	.rightimage {
-		clear: both;
-		width:100%;
-		margin: 0 auto;
+	.portfoliocontent {
+		width: 100%;
 	}
 
 }
