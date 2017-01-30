@@ -9,12 +9,16 @@ body {
 	font-size: 16px;
 }
 
+hr {
+	color: #777777;
+}
+
 
 header {
 	width:100%;
-	height: 85px;
+	height: 15%;
 	margin: 0px;
-	background-color: #ffffff;
+	background: #ffffff;
 	border: #cccccc;
 	font-family: "Georgia", "Times", "Times New Roman", "serif";
 }
@@ -30,22 +34,31 @@ h2 {
 	font-size: 24px;
 }
 
-
 textarea {
-	width: 600px;
+	width: 90%;
 	height: 250px;
 }
 
-#logo {
-	width:230px;
-	height:85px;
-	margin-left: 150px;
+
+.logo {
+	width:25%;
+	margin-left: 10%;
 	background-color:#4aaaa5;
 	color: #FFFFFF;
 	text-align:center;
 	vertical-align: middle;
 	line-height: 85px;
 	font-size: x-large;
+	float: left;
+}
+
+.navigation {
+	width: 65%;
+	background-color: #ffffff;
+	float: right;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 85px;
 }
 
 .container {
@@ -53,42 +66,36 @@ textarea {
 	max-width:960px;
 	clear: both;
 	margin: 0 auto;
-	padding-top: 20px;
 	margin-bottom: 90px;
 }
 
 .content {
-	width: 650px;
-	padding: 20px;
+	width: 60%;
+	padding: 5%;
 	background-color: #ffffff;
 	border-color: #dddddd;
 	color: #777777;
 	line-height: 150%;
 	float: left;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 5%;
 }
 
 #bio_image {
 	float: left;
 	margin: 20px;
-	width: 200px;
-	height: 200px;
 }
 
 .connect {
-	width: 270px
-	margin: 0 auto;
-	padding: 10px;
+	width: 30%;
+	padding: 5%;
 	background-color: #ffffff;
 	border-color: #dddddd;
 	float: right;
-}
-
-.navigation {
-	float: right;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 85px;
-	margin-right: 40px;
+	margin-top: 5%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 }
 
 .leftimage {
@@ -144,7 +151,112 @@ footer {
 	background-color: #666666;
 	line-height: 85px;
 	border-top:5px;
+	margin-top: 10%;
 	border-style: solid;
 	border-color: #4aaaa5;
 	font-family: "Georgia", "Times", "Times New Roman", "serif";
 }
+
+/* 
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+
+@media screen and (max-width: 768px) {
+	
+	.container {
+	width: 100%;
+	max-width:640px;
+	margin: 0 auto;
+	padding: 5%;
+	
+	}
+
+	.content {
+		width: 100%;
+		margin: 5% auto;
+	}
+
+	.connect {
+		width: 100%;
+		margin: 0 auto;
+		padding: 5%;
+		margin-bottom: 5%;
+	}
+
+	.logo {
+		width:40%;
+		left-margin: 10%;
+		padding: 0;
+	}
+
+	#bio_image {
+		width: 50%;
+		height: 100%;
+		margin: 0 auto;
+		padding-right: 10%;
+		padding-bottom: 10%;
+	}
+
+	.navigation {
+		width: 50%;
+		float: right;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 85px;
+	}
+
+}
+
+/* 
+  These rules take effect when the browser's width
+  is either 640px or less.
+*/
+
+@media screen and (max-width: 640px) {
+	
+	.container {
+	width: 100%;
+	max-width:640px;
+	margin: 0 auto;
+	padding: 5%;
+	
+	}
+
+	.content {
+		width: 100%;
+		margin: 5% auto;
+	}
+
+	.connect {
+		width: 100%;
+		margin: 0 auto;
+		padding: 5%;
+		margin-bottom: 5%;
+	}
+
+	.logo {
+		width:100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	#bio_image {
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		padding-bottom: 10%;
+	}
+
+	.navigation {
+		width: 100%;
+		float: right;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 85px;
+}
+	
+
+}
+
+
